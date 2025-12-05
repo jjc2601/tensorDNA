@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
 
+print("he3lo0 world")
 data = pd.read_csv("./classification.csv")
 
 data = data.dropna()
