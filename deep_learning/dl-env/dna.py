@@ -6,8 +6,8 @@ from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
 
 print("he3lo0 world")
-data = pd.read_csv("./all_classifcation_and_seqs_aln.csv")
-
+data = pd.read_csv("all_classifcation_and_seqs_aln.csv")
+print(data.head())
 data = data.dropna()
 #encode each species to a specific number
 le = LabelEncoder()
