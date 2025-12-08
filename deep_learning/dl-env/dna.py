@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf
 
 print("he3lo0 world")
-data = pd.read_csv("./classification.csv")
+data = pd.read_csv("./all_classifcation_and_seqs_aln.csv")
 
 data = data.dropna()
 #encode each species to a specific number
@@ -52,7 +52,7 @@ assert math.isclose(len(X_test), .2*len(data), rel_tol=1), f"\033[91mExpected {.
 
 # TODO create a neural network with tensorflow
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Dense(1267,input_shape = [4795]),
+    tf.keras.layers.Dense(1267,input_shape = [27040]),
     #tf.keras.layers.Dense(67, activation= 'sigmoid'),
     tf.keras.layers.Dense(677, activation = 'relu'),
     tf.keras.layers.Dense(677, activation = 'relu'),
